@@ -26,7 +26,7 @@ in {
         };
         services = {
             syncthing = {
-                inherit (config.${namespace}.user) group;
+                inherit (config.${namespace}.user.group);
                 dataDir = "/home/${config.${namespace}.user.name}";
                 enable = true;
                 guiAddress = "0.0.0.0:8384";
