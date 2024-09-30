@@ -7,7 +7,7 @@
 with lib.${namespace};
 let
 in {
-    # imports = [ ./hardware.nix ]; TODO
+    imports = [ ./hardware.nix ];
     config = {
         ${namespace} = {
             default-settings = enabled;
