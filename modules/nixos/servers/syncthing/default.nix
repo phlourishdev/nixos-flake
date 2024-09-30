@@ -14,7 +14,7 @@ in {
     };
 
     config = mkIf cfg.enable {
-        networking.firewall = mkIf config.${namespace}.networking.firewall {
+        networking.firewall = {
            allowedTCPPorts = [
                 8384
                 22000

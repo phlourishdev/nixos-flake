@@ -19,7 +19,7 @@ in {
             doas = {
                 enable = true;
                 extraRules = [{
-                    user = [ config.${namespace}.user.name ];
+                    users = [ config.${namespace}.user.name ];
                     keepEnv = true;
                 }];
             };

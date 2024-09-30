@@ -18,13 +18,12 @@ in {
         nixpkgs.config.allowUnfree = true;
         environment.systemPackages = with pkgs; [
             bettercap
-            ciscoPacketTracer8
-            ftp
+            # ciscoPacketTracer8
             gobuster
             nmap
             mysql
             responder
-            smbclient
+            samba
             sqlmap
             tcpdump
         ];
